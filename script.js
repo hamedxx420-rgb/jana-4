@@ -34,11 +34,10 @@ const observer = new IntersectionObserver(
         `.site-header nav a[href="#${id}"]`
       );
 
-      if (entry.isIntersecting && link) {
-        navLinks.forEach((a) => a.classList.remove("active"));
-        link.classList.add("active");
-      }
-
+      if (link) {
+  navLinks.forEach((a) => a.classList.remove("active"));
+  link.classList.add("active");
+}
     });
   },
   {
@@ -50,4 +49,3 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
-``
