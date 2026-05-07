@@ -49,3 +49,17 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
+// ✅ Animation on Scroll (حل المشكلة)
+
+const elements = document.querySelectorAll(".hidden");
+
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+elements.forEach((el) => observer2.observe(el));
+
