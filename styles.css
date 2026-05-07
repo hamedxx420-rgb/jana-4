@@ -290,3 +290,37 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ✅ HERO STYLE */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 120px 0;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right {
+  flex: 2;
+}
+
+.hero h1 {
+  font-size: 48px;
+  transition: 0.3s ease;
+}
+
+.hero h1:hover {
+  transform: scale(1.05);
+}
+.highlight {
+  background: linear-gradient(90deg, #20dfaf, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
