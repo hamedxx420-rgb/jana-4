@@ -153,29 +153,29 @@ nav a:hover {
 /* HERO */
 .hero {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* ✅ بدل column */
   align-items: center;
-  justify-content: center; /* ✅ أهم سطر */
-  gap: 40px;
-  text-align: center;
+  justify-content: center;
+  gap: 60px;  /* ✅ مسافة حلوة بينهم */
+  text-align: left; /* ✅ النص شمال مش في النص */
 
   padding: 120px 0;
-  min-height: calc(100vh - 70px); /* ✅ ده الحل الحقيقي */
+  min-height: calc(100vh - 70px);
 }
 
 .hero-actions {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* ✅ بدل center */
   gap: 15px;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
+
 .hero-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* ✅ بدل center */
 }
+
 .hero h1 {
   font-size: 70px;
   font-weight: 700;
