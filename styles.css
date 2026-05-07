@@ -46,6 +46,7 @@ a {
   color: inherit;
 }
 /* CONTAINER */
+
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
@@ -54,6 +55,38 @@ a {
 /* SECTION */
 .section {
   padding: 100px 0;
+}
+
+/* ✅ 👇 هنا تحط الكود الجديد */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(13,27,42,0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 15px;
+  color: var(--muted);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
