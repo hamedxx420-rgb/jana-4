@@ -51,7 +51,7 @@ sections.forEach((section) => {
 });
 // ✅ Animation on Scroll (حل المشكلة)
 
-const elements = document.querySelectorAll(".hidden");
+const elements = document.querySelectorAll("section.hidden");
 
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
