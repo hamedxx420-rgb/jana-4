@@ -69,3 +69,9 @@ window.onload = () => {
   document.querySelectorAll("section").forEach(el => el.classList.add("show"));
 };
 
+// ✅ حل نهائي لإظهار كل حاجة
+window.onload = () => {
+  document.querySelectorAll(".hidden").forEach(el => {
+    el.classList.remove("hidden");
+  });
+};
