@@ -59,7 +59,13 @@ const observer2 = new IntersectionObserver((entries) => {
       entry.target.classList.add("show");
     }
   });
+}, {
+  threshold: 0.1
 });
 
 elements.forEach((el) => observer2.observe(el));
+
+window.onload = () => {
+  document.querySelectorAll("section").forEach(el => el.classList.add("show"));
+};
 
