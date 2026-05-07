@@ -179,6 +179,12 @@ nav a:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,0.4);
 }
 
+/* ✅ ✅ 👇 هنا تحط الكود الجديد */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
 /* ABOUT */
 .grid-2 {
   display: grid;
